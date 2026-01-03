@@ -18,24 +18,32 @@ export default function Home() {
       title: "Jhol",
       src: "/music/jhol.mp3",
       img: "/images/Jhol_image.webp",
+      singer:"Annural Khalid and Maanu",
+      singImg:"/images/AnnuralKhalid.jpg"
     },
     {
       id: 1,
       title: "Thodi Si Daaru",
       src: "/music/ThodiSiDaaru.mp3",
       img: "/images/thodi-si-daaru.webp",
+      singer:"AP Dhillon and Shreya Ghoshal",
+      singImg:"/images/APDillon.jpg"
     },
     {
       id: 2,
       title: "For A Reason",
       src: "/music/ForAReason.mp3",
       img: "/images/ForAReason.jpg",
+      singer:"Karan Aujla",
+      singImg:"/images/KaranAujla.jpg"
     },
     {
       id: 3,
       title: "Haseen",
       src: "/music/Haseen.mp3",
       img: "/images/Haseen.jpg",
+      singer:"Talwiinder",
+      singImg:"/images/Talwiinder.jpg"
     },
   ];
   const getStart = [
@@ -335,13 +343,13 @@ export default function Home() {
                 <Image
                   className="rounded-full"
                   fill
-                  src={"/images/KaranAujla.jpg"}
+                  src={recentSong[current].singImg}
                   alt="img"
                 ></Image>
               </div>
 
               <div>
-                <div className="font-bold text-sm">Karan Aujila</div>
+                <div className="font-bold text-sm">{recentSong[current].singer}</div>
                 <div className="text-xs text-zinc-300">Artist</div>
               </div>
             </div>
